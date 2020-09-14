@@ -1,108 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>don't cha</title>
-</head>
-<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <nav>
+                <a href="#container">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#footer">Contact</a>
+            </nav>
+        </div>
+        <div class="container">
+            <h1>Yusuf Yıldız</h1>
+            <h3>Junior Front End Developer</h3>
+        </div>
+        <div class="portfolio">
+            <div class="p" id="p1">
+                <h2 style="text-align: center;">Education</h2>
+                <p>Kadir Has University, New Media 2016-Present<br>
+                    Akyazı Anadolu High School, 2012-2016</p>
+            </div>
+            <div class="p" id="p2">
+                <h2 style="text-align: center;">Skills</h2>
+                <p>HTML5, CSS, Javascript, Bootstrap</p>
+            </div>
+            <div class="p" id="p3">
+                <h2 style="text-align: center;">Experiences</h2>
+                <p>None</p>
+            </div>
+        </div>
+        <div class="footer">
+            <span style="margin: 5px;"><i class="fa fa-phone" aria-hidden="true"></i> +90543425****</span>|
+            <span style="margin: 5px;"><i class="fa fa-envelope" aria-hidden="true"></i> yusuf.uldz@gmail.com</span>|
+            <span style="margin: 5px;"><i class="fa fa-map-marker" aria-hidden="true"></i> Istanbul, Turkey</span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="https://github.com" id="social"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://instagram.com" id="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com" id="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
 
-<input type="text" id="inputC">
-<button onclick="fuckFunction()" id="myBtn">submit</button>
-
-<ol id="listem">
-<li>eleman</li>
-</ol>
-<script>
-
-function fuckFunction(){
-
-var ekle = document.getElementById("inputC").value;
-
-var abc = document.createTextNode(ekle);
-
-var listeElemani = document.createElement("li");
-
-listeElemani.appendChild(abc);
-
-document.getElementById("listem").appendChild(listeElemani);
-}
-
-var enter = document.getElementById("inputC");
-enter.addEventListener("keyup", function(event) {
-  if(event.keyCode === 13) { 
-   event.preventDefault();
-   document.getElementById("myBtn").click();
-  }
-});
-
-
-
-
-
-
-
-
-
-class Human {
-constructor(isim, yas, milliyet) {
-this.name = isim;
-this.age = yas;
-this.nationality = milliyet;
-}
-}
-
-class Singer extends Human{}
-
-var shakira = new Singer("Shakira", 45, "Lebinan");
-var nicole = new Singer("Nicole Scherzinger", 39, "Hawaii");
-
-console.log(shakira);
-console.log(nicole);
-
-class Footballer extends Human {}
-
-var alex = new Footballer("Alex de Souza", 42, "Brazilia");
-var yusuf = new Human("Yusuf Yıldız", 22, "Turquia");
-console.log(alex);
-console.log(yusuf);
-
-class SoftwareDeveloper extends Human {
- constructor(isim, yas, milliyet, beceri){
- super(isim, yas, milliyet);
- this.skill = beceri;
- }
-}
-var max = new SoftwareDeveloper("Max Allen", 28, "UK", "Frontend");
-console.log(max);
-
-
-class SuperLig {
-constructor(name, totalmarketvalue, averageage, legioner){
-this.name = name;
-this.market = totalmarketvalue;
-this.average = averageage;
-this.legion = legioner;
-}
-}
-
-var team1 = new SuperLig("Fenerbahçe", 77.5+"m €", 26.4, 60+"%");
-console.log(team1);
-var team2 = new SuperLig("Galatasaray", 69.6+"m €", 27.8, 75+"%");
-console.log(team2);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</script>
-</body>
+    </body>
 </html>
