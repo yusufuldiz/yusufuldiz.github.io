@@ -8,6 +8,8 @@ html {
     background-color: azure;
     height: 30px;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 a {
