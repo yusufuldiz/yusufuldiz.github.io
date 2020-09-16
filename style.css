@@ -8,6 +8,10 @@ html {
     background-color: azure;
     height: 30px;
     padding: 20px;
+}
+
+#navbar {
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -16,7 +20,7 @@ a {
     background-color: azure;
     padding: 20px;
     color: darkslategrey;
-    
+    flex-grow: 1;
 }
 a:hover {
     background-color: darkslategrey;
