@@ -21,6 +21,7 @@ a {
     padding: 20px;
     color: darkslategrey;
     flex-grow: 1;
+    flex-shrink: 1;
 }
 a:hover {
     background-color: darkslategrey;
